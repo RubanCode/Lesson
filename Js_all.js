@@ -262,3 +262,67 @@ let condition = ["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"];
 // Only change code above this line
 console.log(forecast(condition));
 console.log(condition);
+
+
+/* Basic Data Structures */
+
+//1
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = "a";
+// Only change code above this line
+console.log(myArray);
+
+//2
+function mixedNumbers(arr) {
+  // Only change code below this line
+  arr.unshift("I", 2, "three");
+  arr.push(7, "VIII", 9);
+  // Only change code above this line
+  return arr;
+}
+
+console.log(mixedNumbers(["IV", 5, "six"]));
+
+//3
+function popShift(arr) {
+  let popped = arr.pop(); // Change this line
+  let shifted = arr.shift(); // Change this line
+  return [shifted, popped];
+}
+
+console.log(popShift(["challenge", "is", "not", "complete"]));
+//4
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+let sums = arr.splice(1, 4);
+// Only change code above this line
+console.log(arr);
+//5
+function htmlColorNames(arr) {
+  // Only change code below this line
+  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
+  // Only change code above this line
+  return arr;
+}
+
+console.log(
+  htmlColorNames([
+    "DarkGoldenRod",
+    "WhiteSmoke",
+    "LavenderBlush",
+    "PaleTurquoise",
+    "FireBrick",
+  ])
+);
+//
+function forecast(arr) {
+  // Only change code below this line
+
+  var slicedforecast = arr.slice(2, 4);
+  return slicedforecast;
+}
+let condition = ["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"];
+// Only change code above this line
+console.log(forecast(condition));
+console.log(condition);
