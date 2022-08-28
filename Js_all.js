@@ -355,3 +355,12 @@ let c = 4.6;
 a *= 5;
 b *= 3;
 c *= 10;
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+ 
+
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+const myStr = "This is the start. " + "This is the end.";
